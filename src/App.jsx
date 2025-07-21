@@ -3,6 +3,14 @@ import GameBoard from "./components/GameBoard";
 import { act, useState } from "react";
 import Log from "./components/Log";
 
+const WINNGING_COMBINATIONS = [
+  [
+    { row: 0, col: 0 },
+    { row: 0, col: 1 },
+    { row: 0, col: 2 },
+  ],
+];
+
 function deriveActivePlayer(turns) {
   let currentPlayer = "X";
 
